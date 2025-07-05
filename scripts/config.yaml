@@ -1,0 +1,23 @@
+# ALE Parameters
+ENV_NAME: "ALE/SpaceInvaders-v5"
+REPEAT_ACTION_PROBABILITY: 0
+FRAMESKIP: 4
+OBS_TYPE: "grayscale"
+MAX_STEPS_PER_EPISODE: 10000
+EPISODES_PER_INDIVIDUAL: 1
+
+
+# CMA-ES Parameters
+CMA_SIGMA: 0.5
+POPULATION_SIZE: null
+GENERATIONS: 5000
+
+# Verbosity level for logging
+# 0 - no output
+# 1 - only the best individual in the generation
+# 2 - 1 + output of all run results
+VERBOSITY_LEVEL: 1
+
+# SCOPE parameters
+K: 50
+p: 75
