@@ -1,5 +1,9 @@
 # Sparse Cosine Optimized Policy Evolution for Atari Games
 
+[Jim O'Connor](https://oconnor.digital.conncoll.edu) | [Jay B. Nash](https://www.linkedin.com/in/jaybnash/) | [Derin Gezgin](https://deringezgin.github.io) | [Gary B. Parker](https://oak.conncoll.edu/parker/)
+
+*Published in AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment, 2025*
+
 ## Overview
 
 Sparse Cosine Optimized Policy Evolution (**SCOPE**) is a lightweight reinforcement-learning framework that evolves compact policies for Atari 2600 games.  
@@ -131,3 +135,25 @@ Key fields:
 * `K`, `P` – SCOPE hyperparameters.
 * `CMA_SIGMA`, `POPULATION_SIZE`, `GENERATIONS` – CMA-ES settings.
 * `EPISODES_PER_INDIVIDUAL`, `MAX_STEPS_PER_EPISODE` – evaluation parameters
+
+---
+
+## Citation
+
+```bibtex
+@inproceedings{10.1609/aiide.v21i1.36834,
+author = {O'Connor, Jim and Nash, Jay B. and Gezgin, Derin and Parker, Gary B.},
+title = {Playing atari space invaders with sparse cosine optimized policy evolution},
+year = {2025},
+isbn = {1-57735-904-6},
+publisher = {AAAI Press},
+url = {https://doi.org/10.1609/aiide.v21i1.36834},
+doi = {10.1609/aiide.v21i1.36834},
+abstract = {Evolutionary approaches have previously been shown to be effective learning methods for a diverse set of domains. However, the domain of game-playing poses a particular challenge for evolutionary methods due to the inherently large state space of video games. As the size of the input state expands, the size of the policy must also increase in order to effectively learn the temporal patterns in the game space. Consequently, a larger policy must contain more trainable parameters, exponentially increasing the size of the search space. Any increase in search space is highly problematic for evolutionary methods, as increasing the number of trainable parameters is inversely correlated with convergence speed. To reduce the size of the input space while maintaining a meaningful representation of the original space, we introduce Sparse Cosine Optimized Policy Evolution (SCOPE). SCOPE utilizes the Discrete Cosine Transform (DCT) as a pseudo attention mechanism, transforming an input state into a coefficient matrix. By truncating and applying sparsification to this matrix, we reduce the dimensionality of the input space while retaining the highest energy features of the original input. We demonstrate the effectiveness of SCOPE as the policy for the Atari game Space Invaders. In this task, SCOPE with CMA-ES outperforms evolutionary methods that consider an unmodified input state, such as OpenAI-ES and HyperNEAT. SCOPE also outperforms simple reinforcement learning methods, such as DQN and A3C. SCOPE achieves this result through reducing the input size by 53\% from 33,600 to 15,625 then using a bilinear affine mapping of sparse DCT coefficients to policy actions learned by the CMA-ES algorithm. The results presented in this paper demonstrate that the use of SCOPE allow evolutionary computation to achieve results competitive with reinforcement learning methods and far beyond what previous evolutionary methods have achieved.},
+booktitle = {Proceedings of the Twenty-First AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment},
+articleno = {31},
+numpages = {10},
+location = {Edmonton, Alberta, Canada},
+series = {AIIDE '25}
+}
+```
