@@ -1,4 +1,4 @@
-# Sparse Cosine Optimized Policy Evolution for Atari Games
+# Playing Atari Space Invaders with Sparse Cosine Optimized Policy Evolution
 
 [Jim O'Connor](https://oconnor.digital.conncoll.edu) | [Jay B. Nash](https://www.linkedin.com/in/jaybnash/) | [Derin Gezgin](https://deringezgin.github.io) | [Gary B. Parker](https://oak.conncoll.edu/parker/)
 
